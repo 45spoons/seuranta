@@ -5,4 +5,5 @@ apscheduler
 aiohttp
 aiofiles
 sqlmodel
+alembic
 pyyaml
