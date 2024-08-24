@@ -18,6 +18,21 @@ pip3 install -r requirements.txt
 python3 ./main.py
 ```
 
+## Tietokantamigraatiot
+
+Jos olet tehnyt muutoksia tietokannan rakenteeseen, tulee luoda alembic:lla migraatio.
+Tämän jälkeen sinun _tulee_ tarkistamalla ja muuttamalla luotua versiotiedostoa varmistua, että tulevat muutokset olisivat tarkoituksenmukaisia.
+
+```shell
+alembic revision --autogenerate -m "kuvaile tässä tekemääsi muutosta hyödyllisellä tavalla"
+```
+
+Muutoksen seurantaa pyörittävään tietokantaan saa ajamalla komento:
+
+```shell
+alembic upgrade head
+```
+
 ## Projektin rakenne
 
 ```text
